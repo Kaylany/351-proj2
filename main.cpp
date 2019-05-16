@@ -33,6 +33,23 @@ int main () {
 	cout << "Enter page size (1:100, 2:200, 3:300): " << endl;
 	cin >> pageSize;
 
+	switch (pageSize) {
+
+		case 1: pageSize = 100;
+		break;
+
+		case 2: pageSize = 200;
+		break;
+
+		case 3: pageSize = 300;
+		break;
+
+		default:
+		cout << "Invaild input. " << endl;
+	}
+
+
+
 	cout << "Enter the input file name (with .txt): " << endl;
 	cin >> file;
 
@@ -61,4 +78,6 @@ int main () {
 		}
 	}
 	file.close();
+
+	return 0;
 }
